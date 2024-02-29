@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Khata</title>
+</head>
+<body>
+    <h1>Welcome to Personal Khata</h1>
+
+    <!-- Input Fields -->
+    <label>Date:</label>
+    <input type="date" id="dateInput">
+
+    <label>Category:</label>
+    <input type="text" id="categoryInput">
+
+    <label>Amount:</label>
+    <input type="number" id="amountInput">
+
+    <!-- Buttons -->
+    <button onclick="saveEntry()">Save Entry</button>
+    <button onclick="exportToExcel()">Export to Excel</button>
+
+    <!-- Display Entries -->
+    <h2>Your Entries:</h2>
+    <ul id="entryList"></ul>
+
+    <!-- Script for Handling Data -->
+    <script src="app.js"></script>
+</body>
+</html>
